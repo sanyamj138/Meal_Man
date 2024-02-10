@@ -5,4 +5,12 @@
     <string name="copyright">Designed by Meal Man</string>
     <string name="introlines">Traditional taste at your doorstep</string>
     <string name="next">Next</string>
+    <string name="login_msg">Login To Your Account</string>
+    <string name="or">Or</string>
+    <string name="continue_text">Continue With</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="google">Google</string>
+    <string name="submit">Submit</string>
+    <string name="register_txt">Don\'t have an Account ?</string>
 </resources>
