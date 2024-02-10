@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
     <ImageView
         android:id="@+id/applogo"
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/login_msg"
+        android:text="@string/sign_up_here"
         android:textSize="25sp"
         android:textColor="#FFB534"
         android:layout_centerHorizontal="true"
@@ -39,7 +39,7 @@
         />
 
     <EditText
-        android:id="@+id/login_email"
+        android:id="@+id/signup_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/appslogan"
@@ -47,6 +47,24 @@
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="20dp"
         android:paddingTop="5dp"
+        android:background="@drawable/edittextshape"
+        android:drawableStart="@drawable/profile"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/akaya_telivigala"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
         android:background="@drawable/edittextshape"
         android:drawableStart="@drawable/mail"
         android:drawablePadding="15dp"
@@ -60,17 +78,17 @@
         android:id="@+id/login_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="5dp"
         android:layout_below="@id/login_email"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edittextshape"
         android:drawableStart="@drawable/lock"
         android:drawablePadding="15dp"
         android:ems="10"
         android:fontFamily="@font/akaya_telivigala"
         android:hint="@string/password"
+        android:paddingTop="5dp"
+        android:background="@drawable/edittextshape"
         android:inputType="textPassword"
         android:paddingStart="15dp" />
 
@@ -90,7 +108,7 @@
         android:id="@+id/continue_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/continue_text"
+        android:text="@string/sign_up_with"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/akaya_telivigala"
@@ -129,18 +147,19 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/nextbutton"
         android:fontFamily="@font/akaya_telivigala"
-        android:text="@string/login_txt" />
+        android:text="@string/create_account" />
 
     <TextView
         android:id="@+id/register_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register_txt"
+        android:text="@string/login_already_txt"
         android:layout_marginTop="10dp"
         android:textSize="15sp"
         android:textColor="#FFB534"
-        android:layout_below="@+id/submit_btn"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/akaya_telivigala" />
+        android:fontFamily="@font/akaya_telivigala"
+        android:layout_below="@+id/submit_btn"
+        />
 
 </RelativeLayout>

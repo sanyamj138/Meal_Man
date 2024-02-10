@@ -13,4 +13,10 @@
     <string name="google">Google</string>
     <string name="submit">Submit</string>
     <string name="register_txt">Don\'t have an Account ?</string>
+    <string name="login_txt">Login</string>
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="name">Name</string>
+    <string name="sign_up_with">Sign Up With</string>
+    <string name="login_already_txt">Already have an Account ?</string>
+    <string name="create_account">Create Account</string>
 </resources>
