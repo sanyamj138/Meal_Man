@@ -19,4 +19,6 @@
     <string name="sign_up_with">Sign Up With</string>
     <string name="login_already_txt">Already have an Account ?</string>
     <string name="create_account">Create Account</string>
+    <string name="choose_location_txt">Choose Your Location</string>
+    <string name="fav_item_txt">Explore Your Favorite Item</string>
 </resources>

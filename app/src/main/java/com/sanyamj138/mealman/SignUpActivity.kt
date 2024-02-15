@@ -17,12 +17,12 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.registerBtn.setOnClickListener {
-            intent = Intent(this, ActivityLoginBinding::class.java)
+            intent = Intent(this, ChoosingLocationActivity::class.java)
             startActivity(intent)
         }
 
         binding.registerTxt.setOnClickListener {
-            intent = Intent(this, ActivityLoginBinding::class.java)
+            intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }
