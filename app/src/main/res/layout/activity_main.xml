@@ -27,7 +27,7 @@
         <ImageView
             android:id="@+id/bell_img"
             android:layout_width="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="50dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/bellring" />
 
@@ -48,7 +48,6 @@
         android:layout_below="@+id/explore_layout"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_marginHorizontal="15dp"
         android:layout_marginTop="15dp"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_nav"
