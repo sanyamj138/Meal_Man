@@ -98,7 +98,7 @@
                         android:textColor="@color/black" />
 
                     <ImageButton
-                        android:id="@+id/addButton"
+                        android:id="@+id/plusButton"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:padding="2dp"

@@ -24,13 +24,17 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/cartHeading"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/cartButton"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="#FFB534"
+        android:background="@drawable/proceedbuttonshape"
         android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
         android:fontFamily="@font/akaya_telivigala"
