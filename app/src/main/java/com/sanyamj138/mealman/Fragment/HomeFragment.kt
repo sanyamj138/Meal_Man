@@ -6,10 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.sanyamj138.mealman.R
+import com.sanyamj138.mealman.adaptar.PopularAdapter
 import com.sanyamj138.mealman.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -52,6 +54,13 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(), itemMessage, Toast.LENGTH_SHORT).show()
             }
         })
+        val foodName = listOf("Pickle", "Khakara", "Thepla")
+        val Price = listOf("296", "239", "152")
+        val popularFoodImages = listOf(R.drawable.pickle, R.drawable.kakhra, R.drawable.thepla)
+
+        val adapter = PopularAdapter(foodName, Price, popularFoodImages)
+        binding.PopularRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.PopularRecyclerView.adapter = adapter
     }
 
     companion object {
