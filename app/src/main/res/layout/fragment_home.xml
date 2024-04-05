@@ -50,7 +50,7 @@
             android:fontFamily="@font/akaya_telivigala"/>
 
         <TextView
-            android:id="@+id/view_menu_txt"
+            android:id="@+id/viewAllMenu"
             android:layout_weight="0.05"
             android:paddingEnd="10dp"
             android:gravity="end"

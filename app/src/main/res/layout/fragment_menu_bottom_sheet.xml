@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".MenuBottomSheetFragment">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#00000000"
+        android:src="@drawable/arrowleft" />
+
+    <TextView
+        android:id="@+id/cartHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBack"
+        android:textSize="25sp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:layout_centerHorizontal="true"
+        android:text="Menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cartHeading"/>
+
+</RelativeLayout>
