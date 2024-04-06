@@ -22,7 +22,7 @@ class BuyAgainAdapter(private val buyAgainFoodName: ArrayList<String>, private v
     class BuyAgainViewHolder(private val binding: BuyAgainItemBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(foodName: String, foodPrice: String, foodImage: Int) {
             binding.buyAgainFoodName.text = foodName
-            binding.buyAgainFoodPrice.text = foodName
+            binding.buyAgainFoodPrice.text = foodPrice
             binding.buyAgainFoodImage.setImageResource(foodImage)
         }
 

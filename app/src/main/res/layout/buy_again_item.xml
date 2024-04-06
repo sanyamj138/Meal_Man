@@ -48,7 +48,7 @@
                     android:fontFamily="@font/akaya_telivigala"
                     android:layout_marginTop="15dp"
                     android:layout_marginLeft="10dp"
-                    android:textSize="15sp"
+                    android:textSize="20sp"
                     android:text="Product Name" />
 
                 <TextView
