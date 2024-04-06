@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".PayOutActivity">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:background="#00000000"
+        android:src="@drawable/arrowleft" />
+
+    <TextView
+        android:id="@+id/payOutHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonBack"
+        android:fontFamily="@font/akaya_telivigala"
+        android:textColor="#FFB534"
+        android:text="Edit"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/payOutLayout1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/payOutHeading"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:weightSum="2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profileedittextshape"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/payOutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/akaya_telivigala"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/payOutNameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#00000000"
+            android:ems="10"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/payOutLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payOutLayout1"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="2"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profileedittextshape"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/payOutAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/akaya_telivigala"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Address"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/payOutAddressEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#00000000"
+            android:ems="10"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+            android:inputType="textMultiLine"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payOutLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payOutLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:padding="5dp"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profileedittextshape"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/payOutPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/akaya_telivigala"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Phone"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/payOutPhoneEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#00000000"
+            android:ems="10"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="7014775343"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payOutLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payOutLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:padding="5dp"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profileedittextshape"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/payOutPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/akaya_telivigala"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Payment Method"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/cashOnDeliveryImage"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/cashondelivery" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payOutLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payOutLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:padding="5dp"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profileedittextshape"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/payOutAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/akaya_telivigala"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Total Amount"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/payOutAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="250"
+            android:textColor="#FFB534"
+            android:textSize="20sp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            app:drawableStartCompat="@drawable/rupee" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/PlaceMyOrder"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:paddingTop="10dp"
+        android:textAllCaps="false"
+        android:elevation="5dp"
+        android:textSize="20sp"
+        android:textColor="#FFB534"
+        android:background="@drawable/proceedbuttonshape"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/akaya_telivigala"
+        />
+
+</RelativeLayout>

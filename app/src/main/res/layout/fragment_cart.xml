@@ -19,13 +19,13 @@
         android:id="@+id/cartRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/cartButton"
+        android:layout_above="@id/proceedButton"
         android:layout_marginHorizontal="10dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/cartHeading"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cartButton"
+        android:id="@+id/proceedButton"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"

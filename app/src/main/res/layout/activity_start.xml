@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:paddingTop="5dp"

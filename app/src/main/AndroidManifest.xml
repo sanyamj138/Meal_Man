@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MealMan"
         tools:targetApi="31">
         <activity
+            android:name=".PayOutActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChoosingLocationActivity"
             android:exported="false" />
         <activity
