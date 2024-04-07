@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/appman" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/satisfy"
+        android:text="@string/appname"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/appslogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_msg"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#FFB534"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:layout_below="@+id/appname"
+        />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appslogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/edittextshape"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@id/login_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextshape"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp" />
+
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:layout_below="@+id/login_password"
+        />
+
+    <TextView
+        android:id="@+id/continue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_text"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:layout_below="@+id/or_text"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/google_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continue_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/google_button"
+        android:drawableStart="@drawable/google"
+        android:drawablePadding="10dp"
+        android:paddingTop="10dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="@string/google"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google_btn"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/nextbutton"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="@string/login_txt"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dontHaveAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_txt"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#FFB534"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/akayatelivigalaregular" />
+
+</RelativeLayout>
