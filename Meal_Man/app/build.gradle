@@ -4,21 +4,17 @@ plugins {
 }
 
 android {
-    namespace 'com.sanyamj138.mealman'
+    namespace 'com.sanyamj138.admin_meal_man'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.sanyamj138.mealman"
+        applicationId "com.sanyamj138.admin_meal_man"
         minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildFeatures {
-        viewBinding true
     }
 
     buildTypes {
@@ -45,8 +41,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
-    // Slide Show
-    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
 }
