@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Fragment.SearchFragment">
 
     <TextView
@@ -35,12 +36,13 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/akaya_telivigala"
         android:layout_centerHorizontal="true"
-        android:text="Cart" />
+        android:text="Menu" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:listitem="@layout/menu_item"
         android:layout_marginHorizontal="10dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/menuHeading"/>

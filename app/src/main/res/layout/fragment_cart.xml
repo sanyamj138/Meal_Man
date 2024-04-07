@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Fragment.CartFragment">
 
     <TextView
@@ -18,6 +19,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cartRecyclerView"
         android:layout_width="match_parent"
+        tools:listitem="@layout/cart_item"
         android:layout_height="wrap_content"
         android:layout_above="@id/proceedButton"
         android:layout_marginHorizontal="10dp"
