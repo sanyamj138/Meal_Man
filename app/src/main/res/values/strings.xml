@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MealMan</string>
+    <string name="appname">Meal Man</string>
+    <string name="appslogan">From our homes to yours</string>
+    <string name="copyright">Designed by Meal Man</string>
+    <string name="introlines">Traditional taste at your doorstep</string>
+    <string name="next">Next</string>
+    <string name="login_msg">Login To Your Account</string>
+    <string name="or">Or</string>
+    <string name="continue_text">Continue With</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="google">Google</string>
+    <string name="submit">Submit</string>
+    <string name="register_txt">Don\'t have an Account ?</string>
+    <string name="login_txt">Login</string>
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="name">Name</string>
+    <string name="sign_up_with">Sign Up With</string>
+    <string name="login_already_txt">Already have an Account ?</string>
+    <string name="create_account">Create Account</string>
+    <string name="choose_location_txt">Choose Your Location</string>
+    <string name="fav_item_txt">Explore Your Favorite Item</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_txt">Popular</string>
+    <string name="menu_txt">View Menu</string>
+</resources>
