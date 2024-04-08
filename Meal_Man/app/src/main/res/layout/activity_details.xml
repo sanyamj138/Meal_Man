@@ -20,6 +20,7 @@
         android:id="@+id/detailFoodName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_below="@+id/buttonBack"
         android:textSize="25sp"
         android:fontFamily="@font/akaya_telivigala"
@@ -51,6 +52,7 @@
         android:layout_below="@+id/DetailCardView"
         android:textSize="25sp"
         android:layout_marginTop="15dp"
+        android:textColor="@color/black"
         android:fontFamily="@font/akaya_telivigala"
         android:layout_marginStart="10dp"
         android:text="Short Description" />
@@ -65,6 +67,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/akaya_telivigala"
+        android:textColor="@color/black"
         android:layout_marginStart="10dp"
         android:text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups." />
 
@@ -75,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/DescriptionTextView"
         android:textSize="25sp"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:fontFamily="@font/akaya_telivigala"
@@ -87,6 +91,7 @@
         android:layout_below="@+id/ingredientsTextView"
         android:textSize="15sp"
         android:paddingHorizontal="10dp"
+        android:textColor="@color/black"
         android:layout_marginHorizontal="10dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/akaya_telivigala"

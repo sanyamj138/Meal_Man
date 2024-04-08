@@ -44,6 +44,7 @@
                 android:id="@+id/cartFoodName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:fontFamily="@font/akaya_telivigala"
                 android:layout_marginTop="15dp"
                 android:gravity="center"

@@ -12,6 +12,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="150dp"
         app:srcCompat="@drawable/appman" />
 
@@ -22,6 +23,7 @@
         android:layout_below="@+id/applogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
+        android:textColor="@color/black"
         android:fontFamily="@font/satisfy"
         android:text="@string/appname"
         android:textSize="50sp" />
@@ -43,6 +45,7 @@
         android:layout_height="wrap_content"
         android:text="@string/appslogan"
         android:textSize="20sp"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/akayatelivigalaregular"
         android:layout_below="@+id/adminDashboard"

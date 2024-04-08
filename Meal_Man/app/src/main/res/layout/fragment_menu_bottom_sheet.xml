@@ -19,6 +19,7 @@
         android:id="@+id/cartHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_below="@+id/buttonBack"
         android:textSize="25sp"
         android:fontFamily="@font/akaya_telivigala"

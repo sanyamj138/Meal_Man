@@ -44,6 +44,7 @@
             android:id="@+id/popular_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:layout_weight="0.5"
             android:paddingTop="5dp"
             android:text="@string/popular_txt"

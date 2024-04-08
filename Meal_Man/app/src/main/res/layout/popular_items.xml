@@ -39,6 +39,7 @@
                 android:layout_weight="0.5"
                 android:fontFamily="@font/akaya_telivigala"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:text="Product Name" />
 

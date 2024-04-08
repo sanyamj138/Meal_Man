@@ -48,6 +48,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/akaya_telivigala"
                     android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="10dp"
                     android:textSize="20sp"
                     android:text="Product Name" />
