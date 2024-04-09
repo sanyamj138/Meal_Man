@@ -20,5 +20,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
+
+        binding.allItemMenu.setOnClickListener {
+            val intent = Intent(this, AllItemActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
