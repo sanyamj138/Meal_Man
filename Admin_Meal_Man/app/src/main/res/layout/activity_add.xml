@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#00000000"
+                android:src="@drawable/arrowleft" />
+
+            <TextView
+                android:id="@+id/addItemHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/satisfy"
+                android:gravity="center"
+                android:text="Add Item"
+                android:textColor="@color/black"
+                android:textSize="50sp" />
+
+            <EditText
+                android:id="@+id/itemNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:background="@drawable/edittextshape"
+                android:ems="10"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:outlineSpotShadowColor="#41000000"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginHorizontal="25dp"
+                android:fontFamily="@font/akayatelivigalaregular"
+                android:hint="Enter Food Name"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="10dp" />
+
+
+            <EditText
+                android:id="@+id/itemPriceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:background="@drawable/edittextshape"
+                android:ems="10"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:outlineSpotShadowColor="#41000000"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginHorizontal="25dp"
+                android:fontFamily="@font/akayatelivigalaregular"
+                android:hint="Enter Food Price"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="10dp" />
+
+            <LinearLayout
+                android:id="@+id/selectImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/edittextshape"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/selectImageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_weight="1.5"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:fontFamily="@font/akayatelivigalaregular"
+                    android:textColor="@color/black"
+                    android:text="Select Image" />
+
+                <ImageButton
+                    android:id="@+id/addImageButton"
+                    android:layout_width="25dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="50dp"
+                    android:background="#00000000"
+                    android:src="@drawable/addmenu" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/selectedImage"
+                    android:layout_width="175dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/addimage" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/shortDescriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DetailCardView"
+                android:textSize="25sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/akayatelivigalaregular"
+                android:layout_marginStart="10dp"
+                android:text="Short Description" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shortDescriptionText"
+                android:textSize="15sp"
+                android:background="@color/white"
+                android:paddingHorizontal="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/akayatelivigalaregular"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups." />
+
+
+            <TextView
+                android:id="@+id/ingredientsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DescriptionTextView"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/akayatelivigalaregular"
+                android:text="Ingredients" />
+
+            <EditText
+                android:id="@+id/ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ingredientsTextView"
+                android:textSize="15sp"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_marginEnd="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/akayatelivigalaregular"
+                android:layout_marginStart="10dp"
+                android:text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addToCartDetail"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:textAllCaps="false"
+                android:elevation="5dp"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/addtocartshape"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/akayatelivigalaregular"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -185,7 +185,7 @@
             app:cardCornerRadius="20dp" >
 
             <LinearLayout
-                android:id="@+id/linear_layout4"
+                android:id="@+id/addMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/greenmainbuttonshape"
