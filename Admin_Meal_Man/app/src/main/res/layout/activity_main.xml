@@ -324,7 +324,7 @@
             app:cardCornerRadius="20dp" >
 
             <LinearLayout
-                android:id="@+id/linear_layout7"
+                android:id="@+id/createUserMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:weightSum="3"

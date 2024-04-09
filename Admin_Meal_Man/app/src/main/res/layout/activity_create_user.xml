@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUserActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#00000000"
+        android:src="@drawable/arrowleft" />
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/appman" />
+
+    <TextView
+        android:id="@+id/adminProfileHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/applogo"
+        android:fontFamily="@font/satisfy"
+        android:gravity="center"
+        android:text="Meal Man"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/createUserHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:text="Create New User Profile"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/adminProfileHeading"
+        android:textColor="#FFB534"
+        android:textSize="20sp"
+        android:paddingVertical="5dp"
+        android:layout_marginStart="15dp" />
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createUserHeading"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/edittextshape"
+        android:drawableStart="@drawable/profileblack"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_name"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/edittextshape"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:hint="Email or Phone Number"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_email"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:hint="@string/password"
+        android:paddingTop="5dp"
+        android:background="@drawable/edittextshape"
+        android:inputType="textPassword"
+        android:paddingStart="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CreateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="50dp"
+        android:paddingTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/nextbutton"
+        android:fontFamily="@font/akayatelivigalaregular"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:text="Create New User" />
+
+</RelativeLayout>

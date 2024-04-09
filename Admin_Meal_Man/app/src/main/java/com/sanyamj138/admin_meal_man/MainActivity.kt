@@ -35,5 +35,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AdminProfileActivity::class.java)
             startActivity(intent)
         }
+
+        binding.createUserMenu.setOnClickListener {
+            val intent = Intent(this, CreateUserActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
