@@ -78,13 +78,34 @@
 
             </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="40dp"
-                app:cardBackgroundColor="#4CAF50"
-                app:cardCornerRadius="20dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#4CAF50"
+                    app:cardCornerRadius="20dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/buyAgainFoodButton"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardBackgroundColor="#4CAF50"
+                    android:text="Received"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/addtocartshape"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    app:cardCornerRadius="20dp" />
+            </LinearLayout>
 
         </LinearLayout>
 
