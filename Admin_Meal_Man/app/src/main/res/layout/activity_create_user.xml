@@ -71,7 +71,7 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/login_email"
+        android:id="@+id/signup_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signup_name"
@@ -91,10 +91,10 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/signup_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_email"
+        android:layout_below="@id/signup_email"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="25dp"
@@ -111,7 +111,7 @@
         android:paddingStart="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/CreateButton"
+        android:id="@+id/createUserButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

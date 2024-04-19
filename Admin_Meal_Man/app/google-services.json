@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "370096592905",
+    "project_id": "meal-man-4918b",
+    "storage_bucket": "meal-man-4918b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370096592905:android:e07feadd8669cbf2a700d8",
+        "android_client_info": {
+          "package_name": "com.sanyamj138.admin_meal_man"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt4iZQyNtM6ScG9hIGD2UE0Gqhxk9fGU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
