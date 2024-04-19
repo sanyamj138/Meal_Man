@@ -43,7 +43,7 @@
         />
 
     <EditText
-        android:id="@+id/signup_email"
+        android:id="@+id/signupEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/appslogan"
@@ -62,11 +62,11 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/signup_password"
+        android:id="@+id/signupPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
-        android:layout_below="@id/signup_email"
+        android:layout_below="@id/signupEmail"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
@@ -90,7 +90,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/akayatelivigalaregular"
-        android:layout_below="@+id/signup_password"
+        android:layout_below="@+id/signupPassword"
         />
 
     <TextView

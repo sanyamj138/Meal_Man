@@ -71,7 +71,7 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/signup_email"
+        android:id="@+id/signupEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signup_name"
@@ -91,10 +91,10 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/signup_password"
+        android:id="@+id/signupPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signup_email"
+        android:layout_below="@id/signupEmail"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="25dp"
