@@ -43,7 +43,7 @@
         />
 
     <EditText
-        android:id="@+id/signupEmail"
+        android:id="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/appslogan"
@@ -62,11 +62,11 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/signupPassword"
+        android:id="@+id/loginPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
-        android:layout_below="@id/signupEmail"
+        android:layout_below="@id/loginEmail"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
@@ -90,7 +90,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/akayatelivigalaregular"
-        android:layout_below="@+id/signupPassword"
+        android:layout_below="@+id/loginPassword"
         />
 
     <TextView
@@ -106,7 +106,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/google_btn"
+        android:id="@+id/googleButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/continue_text"
@@ -129,7 +129,7 @@
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/google_btn"
+        android:layout_below="@id/googleButton"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="11dp"
         android:background="@drawable/nextbutton"

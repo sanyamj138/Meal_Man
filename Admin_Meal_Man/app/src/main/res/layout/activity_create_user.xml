@@ -51,7 +51,7 @@
         android:layout_marginStart="15dp" />
 
     <EditText
-        android:id="@+id/signup_name"
+        android:id="@+id/signupName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/createUserHeading"
@@ -74,7 +74,7 @@
         android:id="@+id/signupEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signup_name"
+        android:layout_below="@id/signupName"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="25dp"

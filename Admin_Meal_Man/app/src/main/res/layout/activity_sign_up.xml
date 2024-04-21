@@ -77,7 +77,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
-        android:id="@+id/signup_name"
+        android:id="@+id/signupName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/listOfLacationInput"
@@ -99,7 +99,7 @@
         android:id="@+id/signupEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signup_name"
+        android:layout_below="@id/signupName"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
@@ -159,7 +159,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/google_btn"
+        android:id="@+id/googleButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/continue_text"
@@ -188,7 +188,7 @@
         android:textSize="20sp"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/google_btn"
+        android:layout_below="@id/googleButton"
         android:paddingTop="5dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/nextbutton"

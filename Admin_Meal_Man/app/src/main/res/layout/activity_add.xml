@@ -39,7 +39,7 @@
                 android:textSize="50sp" />
 
             <EditText
-                android:id="@+id/itemNameEditText"
+                android:id="@+id/foodName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -61,7 +61,7 @@
 
 
             <EditText
-                android:id="@+id/itemPriceEditText"
+                android:id="@+id/foodPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -109,7 +109,7 @@
                     android:text="Select Image" />
 
                 <ImageButton
-                    android:id="@+id/addImageButton"
+                    android:id="@+id/foodImage"
                     android:layout_width="25dp"
                     android:layout_weight="0.5"
                     android:layout_height="25dp"
@@ -138,7 +138,7 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/shortDescriptionText"
+                android:id="@+id/foodDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/DetailCardView"
@@ -153,7 +153,7 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/shortDescriptionText"
+                android:layout_below="@+id/foodDescription"
                 android:textSize="15sp"
                 android:background="@color/white"
                 android:paddingHorizontal="10dp"
@@ -167,7 +167,7 @@
 
 
             <TextView
-                android:id="@+id/ingredientsTextView"
+                android:id="@+id/foodIngredient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/DescriptionTextView"
@@ -182,7 +182,7 @@
                 android:id="@+id/ingredient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ingredientsTextView"
+                android:layout_below="@+id/foodIngredient"
                 android:textSize="15sp"
                 android:paddingHorizontal="10dp"
                 android:textColor="@color/black"
@@ -195,7 +195,7 @@
                 android:text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups." />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/addToCartDetail"
+                android:id="@+id/addItem"
                 android:layout_marginHorizontal="50dp"
                 android:layout_marginTop="25dp"
                 android:layout_centerHorizontal="true"
