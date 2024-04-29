@@ -85,6 +85,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/orderStatus"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
@@ -93,7 +94,7 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
-                    android:id="@+id/buyAgainFoodButton"
+                    android:id="@+id/recievedBtn"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     app:cardBackgroundColor="#4CAF50"
