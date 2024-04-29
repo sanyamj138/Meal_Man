@@ -76,6 +76,31 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    // Launcher for google SignIn
+    private val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+            result ->
+        if (result.resultCode == Activity.RESULT_OK){
+            val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
+            if (task.isSuccessful){
+                val account : GoogleSignInAccount = task.result
+                val credential = GoogleAuthProvider.getCredential(account.idToken,null)
+                auth.signInWithCredential(credential).addOnCompleteListener {
+                        authTask ->
+                    if (authTask.isSuccessful){
+                        // successfully sign in with google
+                        Toast.makeText(this, "Successfully sign in with google", Toast.LENGTH_SHORT).show()
+                        updateUi(authTask.result?.user)
+
+                    }else{
+                        Toast.makeText(this, "Google Sign-in Fail", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }else{
+                Toast.makeText(this, "Google Sign-in Fail", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
     private fun createUserAccount(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
@@ -110,32 +135,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    // Launcher for google SignIn
-    private val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-            result ->
-        if (result.resultCode == Activity.RESULT_OK){
-            val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
-            if (task.isSuccessful){
-                val account : GoogleSignInAccount = task.result
-                val credential = GoogleAuthProvider.getCredential(account.idToken,null)
-                auth.signInWithCredential(credential).addOnCompleteListener {
-                        authTask ->
-                    if (authTask.isSuccessful){
-                        // successfully sign in with google
-                        Toast.makeText(this, "Successfully sign in with google", Toast.LENGTH_SHORT).show()
-                        updateUi(authTask.result?.user)
-
-                    }else{
-                        Toast.makeText(this, "Google Sign-in Fail", Toast.LENGTH_SHORT).show()
-                    }
-                }
-            }else{
-                Toast.makeText(this, "Google Sign-in Fail", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-
-    // check if user already logged in
+    // Check if user already logged in
     override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser

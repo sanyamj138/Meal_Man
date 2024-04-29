@@ -29,7 +29,7 @@
         android:textSize="35sp" />
 
     <TextView
-        android:id="@+id/appslogan"
+        android:id="@+id/signup_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -45,7 +45,7 @@
         android:id="@+id/signup_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/appslogan"
+        android:layout_below="@id/signup_text"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
@@ -61,7 +61,7 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/login_email"
+        android:id="@+id/signup_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signup_name"
@@ -80,10 +80,10 @@
         android:paddingStart="15dp" />
 
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/signup_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_email"
+        android:layout_below="@id/signup_email"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
@@ -108,7 +108,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/akaya_telivigala"
-        android:layout_below="@+id/login_password"
+        android:layout_below="@+id/signup_password"
         />
 
     <TextView

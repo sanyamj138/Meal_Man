@@ -25,4 +25,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="popular_txt">Popular</string>
     <string name="menu_txt">View Menu</string>
+    <string name="default_web_client_id">AIzaSyAt4iZQyNtM6ScG9hIGD2UE0Gqhxk9fGU8</string>
 </resources>
