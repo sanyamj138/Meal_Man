@@ -138,6 +138,15 @@ class SignUpActivity : AppCompatActivity() {
         //save user data in firebase Database
         database.child("user").child(userId).setValue(user)
     }
+
+    override fun onStart() {
+        super.onStart()
+        val currentUser = auth.currentUser
+        if (currentUser != null){
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+    }
 }
 
 //class SignUpActivity : AppCompatActivity() {
