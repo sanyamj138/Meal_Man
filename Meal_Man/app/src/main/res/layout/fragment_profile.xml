@@ -6,6 +6,23 @@
     android:background="@color/white"
     tools:context=".Fragment.ProfileFragment">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profileEditButton"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp"
+        android:textAllCaps="false"
+        android:elevation="5dp"
+        android:textSize="20sp"
+        android:textColor="#FFB534"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/akaya_telivigala"
+        />
+
     <LinearLayout
         android:id="@+id/profileLayout1"
         android:layout_width="match_parent"
@@ -15,6 +32,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
+        android:layout_below="@id/profileEditButton"
         android:background="@drawable/profileedittextshape"
         android:elevation="2dp"
         android:gravity="center_vertical"
