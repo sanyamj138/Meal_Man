@@ -236,8 +236,7 @@
             android:textSize="20sp"
             android:paddingStart="10dp"
             android:paddingTop="5dp"
-            android:paddingEnd="20dp"
-            app:drawableStartCompat="@drawable/rupee" />
+            android:paddingEnd="20dp" />
 
     </LinearLayout>
 

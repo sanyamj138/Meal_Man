@@ -43,7 +43,7 @@ class AdminProfileActivity : AppCompatActivity() {
         binding.editButton.isEnabled = false
 
         var isEnable = false
-        binding.editButton.setOnClickListener {
+        binding.editTextView.setOnClickListener {
             isEnable = ! isEnable
 
             binding.name.isEnabled = isEnable
