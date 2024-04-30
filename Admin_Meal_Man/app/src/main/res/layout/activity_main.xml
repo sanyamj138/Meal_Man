@@ -70,6 +70,7 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:id="@+id/pendingOrderCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="30"
@@ -111,6 +112,7 @@
                     android:textColor="#FFB534"/>
 
                 <TextView
+                    android:id="@+id/completedOrderCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10"
@@ -151,6 +153,7 @@
                     android:textColor="#FFB534"/>
 
                 <TextView
+                    android:id="@+id/wholeTimeEarning"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="100"
@@ -422,7 +425,7 @@
             app:cardCornerRadius="20dp" >
 
             <LinearLayout
-                android:id="@+id/linear_layout9"
+                android:id="@+id/logoutButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:weightSum="3"
